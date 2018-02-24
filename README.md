@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+1. body iteration simplification for form object
+2. error codes unifications  - server side
+                             - client
+                             - exceptions
+3. handle the asychronous call - reference - angular programming guidelines
+4. model for registration component.
+5. improve the http-service class

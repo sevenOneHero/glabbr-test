@@ -1,0 +1,18 @@
+<div style="height: 100vh; width: 100%; background: teal" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card>
+        <form [formGroup]="mFormRegister" fxLayout="column" style='padding-top: 10%; padding-bottom: 10%;'>
+            <mat-card-title>Sign In</mat-card-title>    
+            <mat-card-subtitle>Type in your email address to get verification code.</mat-card-subtitle>
+            <mat-form-field>
+                <input placeholder="Email Address" matInput formControlName="email">        
+            </mat-form-field>
+            <button [disabled]="mFormRegister.invalid" (click)="doRegistration()" mat-raised-button color='primary'>SEND
+            </button>
+
+            <div fxLayout="column" style="padding-top: 40px;">
+                    <mat-card-subtitle style="color: red;" *ngIf="mErrorMessage">{{mErrorMessage}}</mat-card-subtitle>
+                    <mat-card-subtitle>{{mSuccessMessage}}</mat-card-subtitle>
+            </div>
+        </form>
+    </mat-card>
+</div>
